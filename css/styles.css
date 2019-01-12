@@ -1,0 +1,131 @@
+::-webkit-scrollbar {
+    display: none;
+}
+.font1 {
+    font-family: "Helvetica Neue";
+    font-weight: lighter;
+    color: white;
+    flex: auto;
+}
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body {
+    margin: 0px auto;
+    padding: 0px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    height: 140vh;
+    background: #000000f0;
+}
+.main-logo {
+    position: fixed;
+}
+.logo {
+    transform: rotate(-90deg);
+    position: relative;
+    left: 34px;
+    width: 18px;
+    transition: transform .50s ease-in-out, top .50s ease-in-out;
+    -moz-transition: transform .50s ease-in-out, top .50s ease-in-out;
+    -webkit-transition: transform .50s ease-in-out, top .50s ease-in-out;
+}
+.nav-numbers {
+    position: fixed;
+    top: 25px;
+    right: -70px;
+    height: 37px;
+    width: auto;
+    color: white;
+    z-index: 33;
+    transition: right .50s ease-in-out, top .50s ease-in-out;
+    -moz-transition: right .50s ease-in-out, top .50s ease-in-out;
+    -webkit-transition: right .50s ease-in-out, top .50s ease-in-out;
+}
+.nav-numbers span {
+    cursor: pointer;
+    font-size: 12px;
+    position: relative;
+    margin: 0px 10px;
+}
+.nav-numbers span:hover {
+    border-bottom: 1px solid white;
+}
+.nav-number .active {
+    font-size: 25px !important;
+}
+.sidebar {
+    transition: bottom .50s ease-in-out;
+    position: fixed;
+    height: 150px;
+    width: auto;
+    bottom: -160px;
+    left: 21px;
+}
+.footer-icon {
+    height: 50px;
+    position: relative;
+}
+.welcome {
+    width: 54%;
+    height: 20%;
+    position: fixed;
+    top: 42%;
+    flex-direction: column;
+}
+.welcome h1 {
+    flex: auto;
+    align-self: center;
+    height: 0px;
+    font-size: 84px;
+    user-select: none;
+    margin: 0px auto;
+}
+.welcome-down {
+    width: 40px;
+    height: auto;
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+    user-select: none;
+}
+.box {
+    flex-direction: column;
+    display: none;
+    align-items: center;
+    height: 55vh;
+    width: 54%;
+    position: fixed;
+    top: 23%;
+    border: 1px solid white;
+    transition: display .50s ease-in-out, top .50s ease-in-out;
+    -moz-transition: display .50s ease-in-out, top .50s ease-in-out;
+    -webkit-transition: display .50s ease-in-out, top .50s ease-in-out;
+    align-self: center;
+}
+.box-1 {
+    background: url(../img/dapper.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.box-2 {
+    background: url(../img/expressit.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.box-title {
+    position: relative;
+    /* right: 14%; */
+    font-size: 21px;
+    /* transform: rotate(-90deg); */
+    color: white;
+}
